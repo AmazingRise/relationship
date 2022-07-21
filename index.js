@@ -33,7 +33,7 @@ const Graph = ForceGraph3D({
     let html = `
         <div class="card">
 <div class="card-image-container">
-    <img class="card-image" alt="avator" src="images/${node.id}.jpg" />
+    <img class="card-image" alt="avator" src="images/${node.id}.jpg" title="${node.intro}"/>
 </div>
 <div class="card-name">
     ${node.name}
@@ -56,8 +56,8 @@ const Graph = ForceGraph3D({
   .linkThreeObject(link => {
     // extend link with text sprite
     const nodeEl = document.createElement('div');
-    let html = `${link.label}`;
-    nodeEl.innerText = html;
+    let html = `<pre class="edge">${link.label}</pre>`;
+    nodeEl.innerHTML = html;
     return new THREE.CSS2DObject(nodeEl);
   })
   .linkPositionUpdate((sprite, { start, end }) => {
@@ -69,29 +69,40 @@ const Graph = ForceGraph3D({
     Object.assign(sprite.position, middlePos);
   })
   .linkVisibility(ifShow)
-  .onLinkClick(()=>{
-    console.log("hi link");
-  })
+  // .onLinkClick(()=>{
+  //   console.log("hi link");
+  // })
   .nodeOpacity(0)
   .onNodeClick(node=>{
     if (node.group != "self") {
       window.location.href = "https://www.bing.com/search?q="+node.name;
     }
   })
-  .onNodeHover(node=>{
+  .onNodeHover((node, e)=>{
     try{
-      console.log(node.name);
+      let tooltip = document.getElementById("tooltip")
+      tooltip.innerText = node.intro;
+      tooltip.style.visibility = "visible";
     } catch {
-
+      tooltip.style.visibility = "hidden";
     }
   })
   //.linkLabel(link => link.label)
   .nodeThreeObjectExtend(true) // Giving a ball
+  .width(800)
+  .height(600)
   ;
 
 const sortClickHandler = (newSort) => {
   sort = newSort;
   Graph.refresh();
+  if (sort="all") {
+    Graph.cameraPosition(
+      { x: 0, y: 0, z: 100 }, // new position
+      null, // lookAt ({ x, y, z })
+      500  // ms transition duration
+    );
+  }
   //console.log("refreshed."+sort);
 }
 
@@ -102,3 +113,9 @@ Array.from(buttons).forEach(button => {
     sortClickHandler(button.value);
   });
 });
+
+Graph.cameraPosition(
+  { x: 0, y: 0, z: 100 }, // new position
+  null, // lookAt ({ x, y, z })
+  500  // ms transition duration
+);
