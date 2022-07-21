@@ -52,7 +52,7 @@ const Graph = ForceGraph3D({
   .nodeVisibility(ifShow)
   .linkAutoColorBy("group")
   .linkThreeObjectExtend(true)
-  .linkWidth(1)
+  //.linkWidth(1)
   .linkThreeObject(link => {
     // extend link with text sprite
     const nodeEl = document.createElement('div');
@@ -91,12 +91,13 @@ const Graph = ForceGraph3D({
   .nodeThreeObjectExtend(true) // Giving a ball
   .width(800)
   .height(600)
+  .linkOpacity(1)
   ;
 
 const sortClickHandler = (newSort) => {
   sort = newSort;
   Graph.refresh();
-  if (sort="all") {
+  if (newSort="all") {
     Graph.cameraPosition(
       { x: 0, y: 0, z: 100 }, // new position
       null, // lookAt ({ x, y, z })
