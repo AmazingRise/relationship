@@ -58,7 +58,6 @@ const Graph = ForceGraph3D({
     const nodeEl = document.createElement('div');
     let html = `${link.label}`;
     nodeEl.innerText = html;
-    nodeEl.addEventListener('pointerdown', () => { alert(1) })
     return new THREE.CSS2DObject(nodeEl);
   })
   .linkPositionUpdate((sprite, { start, end }) => {
@@ -70,13 +69,25 @@ const Graph = ForceGraph3D({
     Object.assign(sprite.position, middlePos);
   })
   .linkVisibility(ifShow)
-  .onNodeHover(()=>{
-    console.log("hi");
+  .onLinkClick(()=>{
+    console.log("hi link");
+  })
+  .nodeOpacity(0)
+  .onNodeClick(node=>{
+    if (node.group != "self") {
+      window.location.href = "https://www.bing.com/search?q="+node.name;
+    }
+  })
+  .onNodeHover(node=>{
+    try{
+      console.log(node.name);
+    } catch {
+
+    }
   })
   //.linkLabel(link => link.label)
-  //.nodeThreeObjectExtend(true) // Giving a ball
+  .nodeThreeObjectExtend(true) // Giving a ball
   ;
-
 
 const sortClickHandler = (newSort) => {
   sort = newSort;
@@ -90,16 +101,4 @@ Array.from(buttons).forEach(button => {
   button.addEventListener("click", e => {
     sortClickHandler(button.value);
   });
-});
-
-
-const avators = document.getElementsByClassName("card-image");
-console.log(1);
-Array.from(avators).forEach(avator => {
-  console.log(avator);
-  avator.addEventListener("pointerdown", ()=>{
-    console.log(1);
-    // console.log(node.name);
-    // window.location.href = "https://www.bing.com/search?q="+node.name;
-  })
 });
