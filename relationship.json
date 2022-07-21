@@ -1,0 +1,108 @@
+{
+    "nodes": [
+        {
+            "id": "justin-bieber",
+            "name": "Justin Bieber",
+            "group": "self",
+            "intro": "Justin Drew Bieber is a Canadian singer. Bieber is widely recognised for his genre-melding musicianship and has played an influential role in modern-day popular music. He was discovered by American record executive Scooter Braun and signed with RBMG Records in 2008, gaining recognition with..."
+        },
+        {
+            "id": "selina-gomez",
+            "name": "Selina Gomez",
+            "group": "romantic",
+            "intro": "Selena Marie Gomez is an American singer, actress, and producer. She has been regarded as a \"triple threat\" by media outlets. Gomez began her acting career on the children's television series Barney & Friends (2002-2004). In her teenage years, she rose to prominence for her lead role as Alex Russo..."
+        },
+        {
+            "id": "caitlin-beadles",
+            "name": "Caitlin Beadles",
+            "group": "romantic",
+            "intro": "Caitlin Beadles is a former girlfriend of Justin Bieber. They dated in 2008/2009 but were not serious. Justin Bieber gave Caitlin a shoutout at the MTV Video Music Awards and wished her to get well soon. Caitlin met Justin at church when he moved to Atlanta. They dated for around a year until she broke up with him i…"
+        },
+        {
+            "id": "hailey-bieber",
+            "name": "Hailey Bieber",
+            "group": "family",
+            "intro": "Hailey Rhode Bieber (née Baldwin; born November 22, 1996) is an American model, media personality, and socialite. She has been featured in major ads for Guess, Ralph Lauren, and Tommy Hilfiger. Bieber is a daughter of Stephen Baldwin, niece of Alec, Daniel, and William Baldwin, and her maternal..."
+        },
+        {
+            "id": "dominic-fike",
+            "name": "Dominic Fike",
+            "group": "coop",
+            "intro": "Dominic David Fike (born December 30, 1995), is an American singer, songwriter, musician, and actor. Fike first received recognition after releasing several popular songs to the website SoundCloud. Following the release of his debut extended play, Don't Forget About Me, Demos, he signed to ..."
+        },
+        {
+            "id": "the-kid-laroi",
+            "name": "the Kid laroi",
+            "group": "coop",
+            "intro": "Charlton Kenneth Jeffrey Howard (born 17 August 2003), known professionally as the Kid Laroi (stylised as The Kid LAROI), is an Australian rapper, singer, and songwriter. He is the recipient of various accolades, including two ARIA Music Awards, five Billboard Music Awards, an iHeartRadio Music ..."
+        },
+        {
+            "id": "usher",
+            "name": "Usher",
+            "group": "others",
+            "intro": "Usher Raymond IV (born October 14, 1978) is an American R&B singer. He was born in Dallas, Texas, but raised in Chattanooga, Tennessee, until moving to Atlanta, Georgia. At the age of 12, his mother put him in local singing competitions before catching the attention of a music A&R from LaFace Records. He released his self-titled debut album Usher (1994), and rose to fam..."
+        },
+        {
+            "id": "patricia-mallette",
+            "name": "Patricia Mallette",
+            "group": "family",
+            "intro": "Patricia Mallette (born April 2, 1975) is the mother of Canadian singer Justin Bieber. She also managed her son's early career. Her autobiography, Nowhere but Up, was published in 2012 by Christian book publisher Revell, and was number 17 on the New York Times Best Seller list during its first week of ..."
+        },
+        {
+            "id": "jeremy-bieber",
+            "name": "Jeremy Bieber",
+            "group": "family",
+            "intro": "Jeremy Bieber is Justin Bieber's father. He was together with Pattie Mallette but they broke up when Justin was at a young age. Justin made a song about it, Down to Earth. Jeremy Bieber has two children from Erin Wagner, Jazmyn Kathleen Bieber and Jaxon Julian Bieber. He also has a daughter, Bay Bieber, with Chelsey …"
+        }
+    ],
+    "links": [
+        {
+            "source": "justin-bieber",
+            "target": "selina-gomez",
+            "label": "ex-girlfriend",
+            "group": "romantic"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "caitlin-beadles",
+            "label": "ex-girlfriend",
+            "group": "romantic"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "hailey-bieber",
+            "label": "wife(since 2018)",
+            "group": "family"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "dominic-fike",
+            "label": "2021 Cooperated song \n Die for u",
+            "group": "coop"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "the-kid-laroi",
+            "label": "2021 Cooperated song \n Stay",
+            "group": "coop"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "usher",
+            "label": "Teacher",
+            "group": "others"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "patricia-mallette",
+            "label": "Mother",
+            "group": "family"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "jeremy-bieber",
+            "label": "Father",
+            "group": "family"
+        }
+    ]
+}
