@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    color: white;
+    background-color: #004080;
 }
 
 .control {
@@ -25,6 +27,10 @@ body {
     height: 50px;
 }
 
+.card-name {
+    color: white;
+}
+
 /* Tooltip 容器 */
 .tooltip {
     /*visibility: hidden;*/
@@ -35,6 +41,7 @@ body {
 
 .edge {
     font-size: small;
+    color: white;
 }
 
 .container {

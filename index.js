@@ -23,7 +23,7 @@ const Graph = ForceGraph3D({
   extraRenderers: [new THREE.CSS2DRenderer()],
 })
   (document.getElementById('3d-graph'))
-  .backgroundColor("#ffffff")
+  .backgroundColor("#004080")
   (document.getElementById('3d-graph'))
   //.graphData(relationship)
   .jsonUrl("relationship.json")
