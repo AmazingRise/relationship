@@ -7,6 +7,12 @@
             "intro": "Justin Drew Bieber is a Canadian singer. Bieber is widely recognised for his genre-melding musicianship and has played an influential role in modern-day popular music. He was discovered by American record executive Scooter Braun and signed with RBMG Records in 2008, gaining recognition with..."
         },
         {
+            "id": "selina-gomez",
+            "name": "Selina Gomez",
+            "group": "romantic",
+            "intro": "Selena Marie Gomez is an American singer, actress, and producer. She has been regarded as a \"triple threat\" by media outlets. Gomez began her acting career on the children's television series Barney & Friends (2002-2004). In her teenage years, she rose to prominence for her lead role as Alex Russo..."
+        },
+        {
             "id": "caitlin-beadles",
             "name": "Caitlin Beadles",
             "group": "romantic",
@@ -25,6 +31,18 @@
             "intro": "Dominic David Fike (born December 30, 1995), is an American singer, songwriter, musician, and actor. Fike first received recognition after releasing several popular songs to the website SoundCloud. Following the release of his debut extended play, Don't Forget About Me, Demos, he signed to ..."
         },
         {
+            "id": "the-kid-laroi",
+            "name": "the Kid laroi",
+            "group": "coop",
+            "intro": "Charlton Kenneth Jeffrey Howard (born 17 August 2003), known professionally as the Kid Laroi (stylised as The Kid LAROI), is an Australian rapper, singer, and songwriter. He is the recipient of various accolades, including two ARIA Music Awards, five Billboard Music Awards, an iHeartRadio Music ..."
+        },
+        {
+            "id": "usher",
+            "name": "Usher",
+            "group": "others",
+            "intro": "Usher Raymond IV (born October 14, 1978) is an American R&B singer. He was born in Dallas, Texas, but raised in Chattanooga, Tennessee, until moving to Atlanta, Georgia. At the age of 12, his mother put him in local singing competitions before catching the attention of a music A&R from LaFace Records. He released his self-titled debut album Usher (1994), and rose to fam..."
+        },
+        {
             "id": "patricia-mallette",
             "name": "Patricia Mallette",
             "group": "family",
@@ -38,6 +56,12 @@
         }
     ],
     "links": [
+        {
+            "source": "justin-bieber",
+            "target": "selina-gomez",
+            "label": "ex-girlfriend",
+            "group": "romantic"
+        },
         {
             "source": "justin-bieber",
             "target": "caitlin-beadles",
@@ -55,6 +79,18 @@
             "target": "dominic-fike",
             "label": "2021 song \n Die for u",
             "group": "coop"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "the-kid-laroi",
+            "label": "2021 song \n Stay",
+            "group": "coop"
+        },
+        {
+            "source": "justin-bieber",
+            "target": "usher",
+            "label": "Teacher",
+            "group": "others"
         },
         {
             "source": "justin-bieber",
